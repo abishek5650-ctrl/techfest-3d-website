@@ -1,0 +1,32 @@
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:black;
+  color:cyan;
+  font-family:Arial;
+}
+
+.cube{
+  width:150px;
+  height:150px;
+  background:linear-gradient(45deg, cyan, blue);
+  animation: rotate 3s infinite linear;
+  box-shadow:0 0 30px cyan;
+  margin:20px;
+}
+
+button{
+  padding:15px 25px;
+  border:none;
+  background:cyan;
+  font-size:20px;
+}
+
+@keyframes rotate{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
